@@ -18,7 +18,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSHKEY }}
-          source: "/"
+          source: "*"
           target: /home/${{ secrets.SSH_USERNAME }}/codezone/frontend
 
       - name: Deploy via SSH connection
