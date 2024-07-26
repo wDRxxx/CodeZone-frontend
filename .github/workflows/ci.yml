@@ -30,6 +30,8 @@ jobs:
           script: |
             cd /home/${{ secrets.SSH_USERNAME }}/codezone/frontend
 
+            npm install
+
             npm run build
 
             pm2 start npm --name "frontend" -- start
