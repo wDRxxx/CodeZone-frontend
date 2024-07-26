@@ -38,4 +38,4 @@ jobs:
 
             pm2 save
 
-            pm2 startup
+            sudo pm2 startup
