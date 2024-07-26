@@ -19,7 +19,7 @@ export default function Header(props: HeaderProps) {
       <div className="flex">
         <Select
           defaultValue={props.options[0]}
-          className="w-40 h-full dark:text-white "
+          className="w-32 md:w-40 h-full dark:text-white "
           classNamePrefix={" dark:!text-white dark:!border-zinc-800 "}
           classNames={{
             indicatorsContainer: (state) =>
@@ -42,7 +42,7 @@ export default function Header(props: HeaderProps) {
       <div className="flex items-center">
         <button
           className={
-            "dark:text-zinc-900 w-20 h-10 rounded-md bg-green-500 text-white font-bold transition duration-200 hover:-translate-y-[2px] transform hover:shadow-md" +
+            "dark:text-zinc-900 w-14 md:w-20 h-10 rounded-md bg-green-500 text-white font-bold transition duration-200 md:hover:-translate-y-[2px] transform hover:shadow-md" +
             (props.isLoading
               ? "border-2 border-transparentflex items-center justify-center"
               : " hover:bg-transparent hover:text-green-500 border-2 border-transparent hover:border-green-500 flex items-center justify-center")

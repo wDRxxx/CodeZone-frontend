@@ -31,10 +31,14 @@ export default function Editor(props: EditorProps) {
 
   return (
     <CodeMirror
-      className={"w-full h-full text-lg !outline-none"}
+      className={"w-full h-full md:text-lg !outline-none"}
       value={props.code}
       onChange={props.onCodeChange}
-      theme={theme == "light" ? lightEditorTheme : darkEditorTheme}
+      theme={
+        theme == "light" || theme == "system"
+          ? lightEditorTheme
+          : darkEditorTheme
+      }
       extensions={props.language}
       basicSetup={{
         autocompletion: true,

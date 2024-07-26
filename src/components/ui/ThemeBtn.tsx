@@ -13,7 +13,7 @@ export default function ThemeBtn(props: ThemeButtonProps) {
   return (
     <button
       className={
-        "hover:-translate-y-[2px] transform transition duration-200 hover:shadow-md rounded-md flex items-center justify-center dark:bg-zinc-900 bg-zinc-50 border-2 dark:border-zinc-700 border-slate-300 size-10 " +
+        "md:hover:-translate-y-[2px] transform transition duration-200 hover:shadow-md rounded-md flex items-center justify-center dark:bg-zinc-900 bg-zinc-50 border-2 dark:border-zinc-700 border-slate-300 size-10 " +
         props.className
       }
       onClick={() => {
